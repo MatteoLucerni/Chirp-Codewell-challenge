@@ -94,17 +94,43 @@ h1{
     width: 100%;
 }
 
+.more{
+    color: var(--darkblue);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 /* main */
+
+main h2{
+    font-size: 3rem;
+}
+
+main h3{
+    font-size: 1.5rem;
+}
 
 .features-container{
     flex-wrap: wrap;
     justify-content: space-between;
+    
+}
+
+.features-icon{
+    font-size: 3.5rem;
 }
 
 .card{
     height: 300px;
-    width: 49%;
+    width: calc(50% - 20px);
     margin-bottom: 30px;
+    padding: 25px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.card-text{
+    line-height: 35px;
 }
 
 .review{
@@ -154,12 +180,20 @@ footer{
     display: flex;
 }
 
+.margin-left-15{
+    margin-left: 15px;
+}
+
 .margin-top-50{
     margin-top: 50px;
 }
 
 .margin-bot-50{
     margin-bottom: 50px;
+}
+
+.margin-bot-20{
+    margin-bottom: 20px;
 }
 
 .margin-right-10{
@@ -178,6 +212,7 @@ footer{
     border-radius: 5px;
     border-color: transparent;
     color: white;
+    cursor: pointer;
 }
 
 .v-align-middle{
@@ -214,4 +249,9 @@ footer{
 
 .translate-left-225{
     transform: translate(-225px);
+}
+
+.darkblue-text{
+    color: var(--darkblue);
+    font-weight: 600;
 }
