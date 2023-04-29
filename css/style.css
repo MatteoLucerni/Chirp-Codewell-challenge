@@ -112,8 +112,8 @@ main h3{
 
 .features-container{
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    column-gap: 50px;
+    row-gap: 20px;
 }
 
 .features-icon{
@@ -122,11 +122,11 @@ main h3{
 
 .card{
     height: 300px;
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
     margin-bottom: 30px;
     padding: 25px;
     border: 2px solid lightgray;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .card-text{
@@ -143,12 +143,19 @@ main h3{
 }
 
 .post{
-    padding: 10px;
+    background-color: white;
+    padding: 25px;
     width: 32%;
+    border-radius: 7px;
+}
+
+.post p{
+    line-height: 35px;
 }
 
 .post-header, .post-footer{
     justify-content: space-between;
+    align-items: center;
 }
 
 .price-container{
@@ -156,10 +163,52 @@ main h3{
     align-items: center;
 }
 
+.price-box h4, .price-box .price-month{
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: 400;
+}
+
+.price-big{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
 .price-box{
-    width: 700px;
-    height: 400px;
-    padding: 20px;
+    max-width: 600px;
+    padding: 40px;
+    background-color: var(--bg-lightyellow);
+    border: 2px solid orange;
+    border-radius: 7px;
+}
+
+.price-info{
+    column-gap: 15px;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+.price-info-text{
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.post-info-icon{
+    height: 70px;
+}
+
+.post-name{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-name h4{
+    font-size: 1.4rem;
+}
+
+.post-name address{
+    font-style: normal;
+    color: gray;
 }
 
 /* footer */
@@ -172,6 +221,11 @@ footer{
     height: 100px;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-navbar nav{
+    column-gap: 30px;
+    font-size: 1.5rem;
 }
 
 /* utils */
@@ -200,8 +254,8 @@ footer{
     margin-right: 10px;
 }
 
-.padding-vertical-50{
-    padding: 50px 0px;
+.padding-vertical-70{
+    padding: 70px 0px;
 }
 
 .btn{
@@ -254,4 +308,16 @@ footer{
 .darkblue-text{
     color: var(--darkblue);
     font-weight: 600;
+}
+
+.tw-icon-blue{
+    height: 30px;
+}
+
+.tw-icon-black{
+    height: 25px;
+}
+
+.w-100per{
+    width: 100%;
 }
